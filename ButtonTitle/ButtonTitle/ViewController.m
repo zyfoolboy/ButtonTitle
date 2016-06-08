@@ -29,6 +29,9 @@
     btn.titleEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
     btn.imageEdgeInsets = UIEdgeInsetsMake(5, 45, 5, 0);
     
+    NSLog(@"%@", NSStringFromCGRect(btn.imageView.frame));
+    NSLog(@"%@", NSStringFromCGRect(btn.titleLabel.frame));
+    
     [self.view addSubview:btn];
     
     // Do any additional setup after loading the view, typically from a nib.
