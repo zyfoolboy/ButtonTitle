@@ -24,9 +24,10 @@
     [btn setImage:[UIImage imageNamed:@"item_grid_filter_price_arrow"] forState:UIControlStateNormal];
     
     [btn setTitle:@"选择" forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize:12];
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-   // btn.titleEdgeInsets = UIEdgeInsetsMake(10, 30, 0, 30);
-    btn.imageEdgeInsets = UIEdgeInsetsMake(5, 35, 5, 0);
+    btn.titleEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
+    btn.imageEdgeInsets = UIEdgeInsetsMake(5, 45, 5, 0);
     
     [self.view addSubview:btn];
     
