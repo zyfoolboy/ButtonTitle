@@ -24,7 +24,7 @@ btn.imageEdgeInsets = UIEdgeInsetsMake(5, 45, 5, 0);
 
 ![模型图](https://github.com/zyfoolboy/ButtonTitle/blob/master/ButtonTitle/ButtonTitle/Assets.xcassets/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-06-08%20%E4%B8%8B%E5%8D%8810.54.08.imageset/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-06-08%20%E4%B8%8B%E5%8D%8810.54.08.png)
 
-此时发现button的titleLabel的高为0，这时找到的关键了，但是为什么会造成这种问题呢，在网上找了答案：<br/>
+此时发现button的titleLabel的高为0，这时找到问题的关键了，但是为什么会造成这种问题呢，在网上找了答案：<br/>
 因为图片原来的尺寸太大，在设置UIButton的image的时候会出现误差。这时，需要把图片的尺寸设置为实际显示时的大小，就可以得到想要的效果了
 
 ![模型图](https://github.com/zyfoolboy/ButtonTitle/blob/master/ButtonTitle/ButtonTitle/Assets.xcassets/Simulator%20Screen%20Shot%202016%E5%B9%B46%E6%9C%888%E6%97%A5%20%E4%B8%8B%E5%8D%8811.23.53.imageset/Simulator%20Screen%20Shot%202016%E5%B9%B46%E6%9C%888%E6%97%A5%20%E4%B8%8B%E5%8D%8811.23.53.png)
