@@ -33,5 +33,6 @@ btn.imageEdgeInsets = UIEdgeInsetsMake(5, 45, 5, 0);
 1.在显示层级关系图时可以看到buttonLabel的宽为160，为什么是160？<br/>
 2.虽然造成这个问题的原因是图片尺寸太大，但是这个图片显示出来的大小是我们期待的效果，并且按钮的imageView的frame也是正常的，按道理说不应该出现按钮的titleLabel的高被挤压为0.
 
-最后，希望知道这些答案的大神能够指点一二。
-
+***
+最近了解到另一种方法：设置 UIButton 的 contentHorizontalAlignment 和 contentVeriticalAligment 即可<br/>
+因为 UIButton 设置 image 的时候默认是不会缩放的，通过设置上面两个属性就可以使 image 缩放。
